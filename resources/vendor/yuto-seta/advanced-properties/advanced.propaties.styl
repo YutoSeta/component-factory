@@ -1,0 +1,48 @@
+//-------------------------
+// shape
+//-------------------------
+
+rect()
+  width arguments[0]
+  height arguments[1]
+
+round-rect()
+  width arguments[0]
+  height arguments[1]
+  border-radius arguments[2]
+
+square()
+  width arguments
+  height arguments
+
+round-square()
+  width arguments[0]
+  height arguments[0]
+  border-radius arguments[1]
+
+circle()
+  width arguments
+  height arguments
+  border-radius 50%
+
+//-------------------------
+// layout
+//-------------------------
+
+layout()
+  if arguments == bar
+    display flex
+  else if arguments == center
+    display flex
+    justify-content center
+    align-items center
+    flex-wrap wrap
+  else if arguments == z
+    display flex
+    flex-wrap wrap
+  else if arguments == stack
+    display flex
+    flex-direction column
+    align-items center
+
+
